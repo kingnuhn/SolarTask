@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using SolarTask;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var app = new App();
+    }
+}
