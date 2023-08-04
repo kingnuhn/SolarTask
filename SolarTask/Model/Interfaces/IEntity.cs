@@ -1,4 +1,4 @@
-﻿namespace SolarTask
+﻿namespace SolarTask.Model.Interfaces
 {
     public interface IEntity
     {

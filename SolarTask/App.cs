@@ -1,4 +1,7 @@
-﻿namespace SolarTask
+﻿using SolarTask.DataContext;
+using SolarTask.Model;
+
+namespace SolarTask
 {
     public class App
     {

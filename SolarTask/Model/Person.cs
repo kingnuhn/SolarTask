@@ -1,4 +1,6 @@
-﻿namespace SolarTask
+﻿using SolarTask.Model.Interfaces;
+
+namespace SolarTask.Model
 {
     public class Person : IEntity
     {

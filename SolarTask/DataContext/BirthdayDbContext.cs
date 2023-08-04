@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SolarTask.Model;
 
-namespace SolarTask
+namespace SolarTask.DataContext
 {
     public class BirthdayDbContext : DbContext
     {
