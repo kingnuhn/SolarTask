@@ -45,7 +45,7 @@
                         RemovePerson();
                         break;
                     case 5:
-
+                        EditPerson();
                         break;
                     case 0:
                         return;
@@ -57,6 +57,25 @@
 
         }
 
+        void EditPerson()
+        {
+            using BirthdayDbContext db = new BirthdayDbContext();
+
+            Console.WriteLine("Ввидите id которого хотите изменить");
+            int id = int.Parse(Console.ReadLine());
+            var person = db.Persons.Find(id);
+            Console.WriteLine("имя");
+            var name = Console.ReadLine();
+            Console.WriteLine("День рождения");
+            var birhday = DateTime.Parse(Console.ReadLine());
+
+            person.Name = name;
+            person.Birthday = birhday;
+            db.SaveChanges();
+            Console.WriteLine("Данные измены");
+
+        }
+
         void SelectAllPerson()
         {
             using BirthdayDbContext db = new BirthdayDbContext();
@@ -65,7 +84,7 @@
 
             foreach (var person in persons)
             {
-                Console.WriteLine($"{person.Name} {person.Birthday}");
+                Console.WriteLine($"{person.Id} {person.Name} {person.Birthday}");
             }
 
         }
