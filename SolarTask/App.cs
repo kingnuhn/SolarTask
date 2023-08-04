@@ -48,7 +48,7 @@
                         EditPerson();
                         break;
                     case 0:
-                        return;
+                        throw new Exception("Ты зачем это сделал!!!!!");
                     default:
                         Console.WriteLine("Вы ввели неверный пункт меню.");
                         break;
